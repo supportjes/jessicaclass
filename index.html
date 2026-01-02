@@ -4,8 +4,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>寒假黃金衝刺直播課程｜早鳥優惠</title>
-        <meta name="description" content="寒假黃金衝刺直播課程：1～6冊會考全範圍、每週進度、會考拿分邏輯、社群陪跑。早鳥 2026/1/3～1/9。" />
+        <title>寒假黃金衝刺數社直播課程｜超早鳥優惠</title>
+        <meta name="description" content="寒假黃金衝刺數社直播課程：1～6冊會考全範圍、每週進度、會考拿分邏輯、社群陪跑。超早鳥 2026/1/3～1/9 24:00。" />
         <style>
             :root {
                 /* Theme: 藍白＋淺黃 */
@@ -538,109 +538,6 @@
                 border: 0
             }
 
-            /* Testimonials: 固定圖片＋縮圖選單 */
-            .gallery {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-                align-items: stretch;
-            }
-
-            @media (max-width: 920px) {
-                .gallery {
-                    grid-template-columns: 1fr
-                }
-            }
-
-            .viewer {
-                border: 1px solid var(--line);
-                border-radius: 18px;
-                background: rgba(255, 255, 255, .80);
-                overflow: hidden;
-                box-shadow: var(--shadow);
-                display: flex;
-                flex-direction: column;
-            }
-
-            .viewerTop {
-                padding: 12px 12px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 10px;
-                border-bottom: 1px solid var(--line);
-                background: rgba(255, 242, 184, .40);
-            }
-
-            .viewerTop .title {
-                font-weight: 950
-            }
-
-            .viewerTop .meta {
-                font-size: 12px;
-                color: var(--muted)
-            }
-
-            .viewerImg {
-                width: 100%;
-                min-height: 320px;
-                background: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 10px;
-            }
-
-            .viewerImg img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                border-radius: 12px;
-            }
-
-            .thumbs {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 8px;
-                margin-top: 10px;
-            }
-
-            .thumb {
-                border: 1px solid var(--line);
-                border-radius: 14px;
-                overflow: hidden;
-                background: rgba(255, 255, 255, .82);
-                cursor: pointer;
-                position: relative;
-                aspect-ratio: 1/1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                user-select: none;
-                -webkit-tap-highlight-color: transparent;
-            }
-
-            .thumb img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block
-            }
-
-            .thumb.active {
-                outline: 3px solid rgba(46, 103, 255, .22)
-            }
-
-            .viewerCtr {
-                padding: 12px;
-                display: flex;
-                gap: 10px;
-                justify-content: flex-end;
-                flex-wrap: wrap;
-                border-top: 1px solid var(--line);
-                background: rgba(255, 255, 255, .76);
-            }
-
             /* Purchase steps */
             .steps {
                 display: grid;
@@ -858,6 +755,14 @@
                 color: var(--muted);
                 line-height: 1.7
             }
+
+            /* 放大：預約課前免費諮詢（購買區那顆） */
+            #openConsultPurchase {
+                font-size: 16px;
+                padding: 14px 18px;
+                min-height: 52px;
+                font-weight: 900;
+            }
         </style>
     </head>
 
@@ -867,12 +772,13 @@
             <div class="inner">
                 <div class="brand">
                     <div class="dot" aria-hidden="true"></div>
-                    <div class="brandTitle">寒假黃金衝刺直播課程</div>
+                    <div class="brandTitle">寒假黃金衝刺數社直播課程</div>
                 </div>
 
                 <div class="navlinks" aria-label="頁面導覽">
                     <a href="#benefits">課程能帶來什麼</a>
                     <a href="#includes">課程包含</a>
+                    <a href="#schedule">授課時間</a>
                     <a href="#pricing">方案價格</a>
                     <a href="#try">課程試聽</a>
                     <a href="#testimonials">學員見證</a>
@@ -888,7 +794,7 @@
             <!-- HERO -->
             <div class="hero">
                 <div class="card">
-                    <div class="badge">早鳥優惠 <span>2026/1/3 ～ 2026/1/9</span></div>
+                    <div class="badge">超早鳥優惠 <span>2026/1/3 ～ 2026/1/9 24:00</span></div>
                     <h1>這個寒假，把會考範圍真正跑完，把分數撐上去</h1>
                     <p class="sub">
                         不是「沒讀」，而是「讀了但一直有洞」，考場上分數就會一直漏。
@@ -898,13 +804,13 @@
                     <div class="grid2">
                         <div class="kpi">
                             <div class="label">直播堂數（每堂 2 小時）</div>
-                            <div class="value">數學 7 堂｜社會 8 堂</div>
+                            <div class="value">數學 7 堂（潔西卡老師）｜社會 8 堂（林波老師）</div>
                             <div class="hint">提供回放，可看到會考結束</div>
                         </div>
                         <div class="kpi">
-                            <div class="label">包含內容</div>
-                            <div class="value">直播課＋社群＋實體教材</div>
-                            <div class="hint">備考不孤單，卡關有地方問</div>
+                            <div class="label">上課時段</div>
+                            <div class="value">數學：週六/日 19:00–21:00｜社會：週六/日 14:00–16:00</div>
+                            <div class="hint">日期詳見下方「授課時間表」</div>
                         </div>
                     </div>
 
@@ -912,10 +818,10 @@
 
                     <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
                         <div>
-                            <div style="font-weight:950;margin-bottom:6px">早鳥倒數</div>
+                            <div style="font-weight:950;margin-bottom:6px">超早鳥倒數</div>
                             <div class="note">倒數結束後自動恢復原價</div>
                         </div>
-                        <div class="countdown" aria-label="早鳥倒數計時">
+                        <div class="countdown" aria-label="超早鳥倒數計時">
                             <div class="timebox">
                                 <div id="dd" class="num">--</div>
                                 <div class="unit">天</div>
@@ -935,7 +841,7 @@
                         </div>
                     </div>
 
-                    <!-- 依照你的需求：早鳥區只留 LINE 主按鈕 -->
+                    <!-- 依照你的需求：超早鳥區只留 LINE 主按鈕 -->
                     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
                         <a id="lineHero" class="btn primary" href="https://lin.ee/y1YxSPG" target="_blank"
                             rel="noopener">
@@ -962,8 +868,8 @@
                             <p>直播＋回放，搭配社群提問與討論，寒假一路有人陪著衝。</p>
                         </div>
                         <div class="mini">
-                            <h4>教材寄送</h4>
-                            <p>收款後先加入賴社群，並於 1/20 寄出實體教材（會開發票）。</p>
+                            <h4>授課老師</h4>
+                            <p>數學由潔西卡老師授課；社會由林波老師授課。</p>
                         </div>
                     </div>
 
@@ -1059,7 +965,7 @@
                 <div class="listGrid">
                     <div class="mini">
                         <h4>1～6 冊會考全範圍直播課</h4>
-                        <p>提供回放，可看到會考結束。適合需要反覆複習、把漏洞補乾淨的同學。</p>
+                        <p>數學（潔西卡老師）＋社會（林波老師）。提供回放，可看到會考結束。</p>
                     </div>
                     <div class="mini">
                         <h4>專屬課程社群：討論＋問問題</h4>
@@ -1076,12 +982,39 @@
                 </div>
             </section>
 
+            <!-- SCHEDULE -->
+            <section id="schedule" class="card">
+                <div class="sectionTitle">
+                    <div>
+                        <h2>授課時間表</h2>
+                        <p>兩科皆為週六、週日上課；數學晚上、社會下午。</p>
+                    </div>
+                </div>
+
+                <div class="listGrid">
+                    <div class="mini">
+                        <h4>數學 1～6 冊（潔西卡老師）｜共 7 堂</h4>
+                        <p>
+                            上課時間：週六/日 19:00–21:00<br />
+                            日期：1/24、1/25、1/31、2/1、2/14、2/15、2/21
+                        </p>
+                    </div>
+                    <div class="mini">
+                        <h4>社會 1～6 冊（林波老師）｜共 8 堂</h4>
+                        <p>
+                            上課時間：週六/日 14:00–16:00<br />
+                            日期：1/24、1/25、1/31、2/1、2/14、2/15、2/21、2/22
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             <!-- PRICING -->
             <section id="pricing" class="card">
                 <div class="sectionTitle">
                     <div>
-                        <h2>早鳥優惠（只有 7 天）｜方案與價格</h2>
-                        <p>2026/1/3 ～ 2026/1/9（逾期恢復原價）</p>
+                        <h2>超早鳥優惠（只有 7 天）｜方案與價格</h2>
+                        <p>2026/1/3 ～ 2026/1/9 24:00（逾期恢復原價）</p>
                     </div>
                 </div>
 
@@ -1093,11 +1026,12 @@
                         </div>
                         <div class="money">
                             <div class="now">NT$ 23,000</div>
-                            <div class="was">原價 NT$ 26,000</div>
-                            <div class="save">省 NT$ 3,000</div>
+                            <div class="was">原價 NT$ 27,998</div>
+                            <div class="save">省 NT$ 4,998</div>
                         </div>
                         <ul>
                             <li>1～6 冊會考全範圍直播課（數學＋社會）</li>
+                            <li>數學由潔西卡老師授課；社會由林波老師授課</li>
                             <li>專屬課程社群：討論＋問問題</li>
                             <li>課程實體教材</li>
                             <li><strong style="color:var(--text)">額外免費加贈：</strong>國三三段數學課程（價值 4,500）</li>
@@ -1120,6 +1054,7 @@
                         </div>
                         <ul>
                             <li>選擇數學或社會其一的直播課＋回放</li>
+                            <li>數學由潔西卡老師授課；社會由林波老師授課</li>
                             <li>專屬課程社群：討論＋問問題</li>
                             <li>課程實體教材</li>
                         </ul>
@@ -1131,7 +1066,7 @@
                 </div>
 
                 <div class="note">
-                    早鳥期間報名最划算；想確認自己適合哪個方案，可以到下方「免費諮詢」按鈕先聊聊。
+                    超早鳥期間報名最划算；想確認自己適合哪個方案，可以到下方「免費諮詢」按鈕先聊聊。
                 </div>
             </section>
 
@@ -1173,15 +1108,21 @@
                 <div class="sectionTitle">
                     <div>
                         <h2>課程試聽</h2>
-                        <p>先看影片感受教學節奏與講解方式。</p>
+                        <p>先看影片感受教學節奏與講解方式（社會是林波老師授課 數學是潔西卡老師授課）。</p>
                     </div>
                 </div>
 
-                <div class="iframeWrap">
-                    <iframe src="https://www.youtube.com/embed/TZVaB5Zs_Vc?si=d_LJDiNQOJ7QRmWY" title="課程試聽"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+                <div class="grid2">
+                    <div class="iframeWrap" aria-label="數學試聽">
+                        <iframe src="https://www.youtube.com/embed/Znky0vFLp4s" title="課程試聽｜數學（潔西卡老師）"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="iframeWrap" aria-label="社會試聽">
+                        <iframe src="https://www.youtube.com/embed/S1NdryDIias" title="課程試聽｜社會（林波老師）"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </section>
 
@@ -1190,46 +1131,27 @@
                 <div class="sectionTitle">
                     <div>
                         <h2>學員見證</h2>
-                        <p>固定使用 3 則見證（手機可點縮圖切換）。</p>
+                        <p>改為 Canva 輪播圖（可直接滑動觀看）。</p>
                     </div>
                 </div>
 
-                <div class="gallery">
-                    <div class="mini">
-                        <h4 style="margin:0 0 10px">見證選單</h4>
-                        <div class="note" style="margin-top:0">
-                            圖片檔請放同資料夾：<strong style="color:var(--text)">C筑.png</strong>、<strong
-                                style="color:var(--text)">于庭.png</strong>、<strong
-                                style="color:var(--text)">品綺.png</strong>
-                        </div>
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy"
+                        style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https://www.canva.com/design/DAGtOXo7XcI/5v-3I9wrz8te8Usix5NIUw/view?embed"
+                        allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
+                <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGtOXo7XcI&#x2F;5v-3I9wrz8te8Usix5NIUw&#x2F;view?utm_content=DAGtOXo7XcI&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+                    target="_blank" rel="noopener">會考生回饋輪播</a>
 
-                        <div class="thumbs" id="thumbs" aria-label="學員見證縮圖選單"></div>
-
-                        <div class="hr"></div>
-                        <a class="btn primary" href="https://lin.ee/y1YxSPG" target="_blank" rel="noopener"
-                            style="width:100%">
-                            我也想報名｜私訊官方 LINE
-                        </a>
-                    </div>
-
-                    <div class="viewer" aria-label="學員見證預覽">
-                        <div class="viewerTop">
-                            <div>
-                                <div class="title" id="vTitle">學員見證 1</div>
-                                <div class="meta" id="vMeta">點左邊縮圖切換</div>
-                            </div>
-                            <div style="display:flex;gap:10px;align-items:center;">
-                                <button class="btn small" type="button" id="prevPic">上一張</button>
-                                <button class="btn small" type="button" id="nextPic">下一張</button>
-                            </div>
-                        </div>
-
-                        <div class="viewerImg" id="viewerImg"></div>
-
-                        <div class="viewerCtr">
-                            <button class="btn soft" type="button" id="openConsultTest">我想先諮詢適不適合</button>
-                        </div>
-                    </div>
+                <div class="hr"></div>
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                    <a class="btn primary" href="https://lin.ee/y1YxSPG" target="_blank" rel="noopener">我也想報名｜私訊官方
+                        LINE</a>
+                    <button class="btn soft" type="button" id="openConsultTest">我想先諮詢適不適合</button>
                 </div>
             </section>
 
@@ -1250,7 +1172,7 @@
                 </ul>
 
                 <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
-                    <a class="btn primary" href="https://lin.ee/y1YxSPG" target="_blank" rel="noopener">現在就趁早鳥優惠來報名</a>
+                    <a class="btn primary" href="https://lin.ee/y1YxSPG" target="_blank" rel="noopener">現在就趁超早鳥優惠來報名</a>
                     <button class="btn soft" type="button" id="openConsultBottom">預約課前免費諮詢</button>
                 </div>
             </section>
@@ -1260,7 +1182,7 @@
         <div class="float" aria-hidden="false">
             <div class="bar">
                 <div class="txt">
-                    <div class="t">早鳥只到 2026/1/9</div>
+                    <div class="t">超早鳥只到 2026/1/9 24:00</div>
                     <div class="d">想把寒假讀書穩住的人，現在最划算</div>
                 </div>
                 <div class="btns">
@@ -1335,13 +1257,8 @@
         <script>
             // ========= 設定 =========
             const OFFICIAL_LINE_URL = "https://lin.ee/y1YxSPG";
-            const EARLY_BIRD_END = "2026-01-09T23:59:59+08:00"; // 台灣時間
-            // 學員見證固定三張（檔名要放同資料夾）
-            const TESTIMONIALS = [
-                { name: "Chang Chu｜筆記/課程回饋", file: "C筑.png" },
-                { name: "邱于庭｜使用心得", file: "于庭.png" },
-                { name: "蘇品綺｜課程筆記評價", file: "品綺.png" },
-            ];
+            // 你指定：1/9 晚上 24:00（等同 1/10 00:00）
+            const EARLY_BIRD_END = "2026-01-10T00:00:00+08:00"; // 台灣時間
             // ========================
 
             // Apply LINE URL to all LINE links (保險)
@@ -1373,52 +1290,6 @@
             }
             tick();
             setInterval(tick, 1000);
-
-            // Testimonials (fixed)
-            const thumbs = document.getElementById("thumbs");
-            const viewer = document.getElementById("viewerImg");
-            const vTitle = document.getElementById("vTitle");
-            const vMeta = document.getElementById("vMeta");
-            const prevPic = document.getElementById("prevPic");
-            const nextPic = document.getElementById("nextPic");
-
-            let active = 0;
-
-            function renderThumbs() {
-                thumbs.innerHTML = "";
-                TESTIMONIALS.forEach((t, idx) => {
-                    const div = document.createElement("div");
-                    div.className = "thumb" + (idx === active ? " active" : "");
-                    const img = document.createElement("img");
-                    img.src = t.file;
-                    img.alt = t.name;
-                    div.appendChild(img);
-                    div.addEventListener("click", () => setActive(idx));
-                    thumbs.appendChild(div);
-                });
-            }
-
-            function setActive(idx) {
-                active = Math.max(0, Math.min(idx, TESTIMONIALS.length - 1));
-                const t = TESTIMONIALS[active];
-                vTitle.textContent = "學員見證 " + (active + 1);
-                vMeta.textContent = t.name;
-
-                viewer.innerHTML = "";
-                const img = document.createElement("img");
-                img.src = t.file;
-                img.alt = t.name;
-                viewer.appendChild(img);
-
-                renderThumbs();
-            }
-
-            prevPic.addEventListener("click", () => setActive(active - 1));
-            nextPic.addEventListener("click", () => setActive(active + 1));
-
-            // Init testimonials
-            renderThumbs();
-            setActive(0);
 
             // Modal open/close
             const modalBg = document.getElementById("modalBg");

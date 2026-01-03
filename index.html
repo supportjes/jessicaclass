@@ -1351,6 +1351,193 @@
                 }
             });
         </script>
+        <footer class="site-footer" aria-label="網站頁尾">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <div class="footer-title">潤智教育有限公司</div>
+                        <div class="footer-sub">統編 95441885</div>
+                    </div>
+        
+                    <div class="footer-contact">
+                        <a class="footer-chip" href="mailto:support@jessicateachmath.net">support@jessicateachmath.net</a>
+                        <a class="footer-chip" href="https://www.instagram.com/teach_math0?igsh=cG94MGl1NzR2NGcy&utm_source=qr"
+                            target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a class="footer-chip" href="https://lin.ee/y1YxSPG" target="_blank" rel="noopener noreferrer">官方
+                            LINE</a>
+                    </div>
+                </div>
+        
+                <div class="footer-divider" role="separator" aria-hidden="true"></div>
+        
+                <div class="footer-accordions">
+                    <details class="footer-details" id="privacy">
+                        <summary class="footer-summary">
+                            <span>隱私權政策</span>
+                            <span class="footer-arrow" aria-hidden="true">▾</span>
+                        </summary>
+                        <div class="footer-panel">
+                            <p class="footer-p">
+                                我們會在你自願提供時（例如加入官方 LINE、填寫表單、留言或預約諮詢）蒐集必要資訊，用於聯繫、提供服務、
+                                課程通知與售後支援。除非為完成服務、依法配合主管機關要求，或取得你的同意，我們不會對外提供或販售你的個人資料。
+                            </p>
+                        </div>
+                    </details>
+        
+                    <details class="footer-details" id="terms">
+                        <summary class="footer-summary">
+                            <span>使用條款</span>
+                            <span class="footer-arrow" aria-hidden="true">▾</span>
+                        </summary>
+                        <div class="footer-panel">
+                            <p class="footer-p">
+                                課程與服務內容、價格與活動方案以本頁或官方 LINE 最新公告為準。我們保留在不影響既有訂單權益的前提下，
+                                調整頁面資訊與呈現方式之權利。
+                            </p>
+                        </div>
+                    </details>
+                </div>
+        
+                <div class="footer-bottom">
+                    <small>© <span id="yearNow"></span> 潤智教育有限公司. All rights reserved.</small>
+                </div>
+            </div>
+        </footer>
+        
+        <style>
+            .site-footer {
+                margin-top: 44px;
+                padding: 28px 18px;
+                border-top: 1px solid rgba(0, 0, 0, .08);
+                background: rgba(255, 255, 255, .72);
+                backdrop-filter: blur(6px);
+            }
+        
+            .footer-wrap {
+                max-width: 1040px;
+                margin: 0 auto;
+            }
+        
+            .footer-top {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 14px;
+                flex-wrap: wrap;
+            }
+        
+            .footer-title {
+                font-size: 16px;
+                font-weight: 800;
+                letter-spacing: .2px;
+            }
+        
+            .footer-sub {
+                margin-top: 6px;
+                font-size: 13px;
+                opacity: .8;
+            }
+        
+            .footer-contact {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        
+            .footer-chip {
+                font-size: 13px;
+                text-decoration: none;
+                padding: 8px 10px;
+                border: 1px solid rgba(0, 0, 0, .12);
+                border-radius: 999px;
+                background: rgba(255, 255, 255, .85);
+            }
+        
+            .footer-chip:hover {
+                border-color: rgba(0, 0, 0, .25);
+            }
+        
+            .footer-divider {
+                margin: 18px 0;
+                height: 1px;
+                background: rgba(0, 0, 0, .08);
+            }
+        
+            .footer-accordions {
+                display: grid;
+                gap: 10px;
+            }
+        
+            .footer-details {
+                border: 1px solid rgba(0, 0, 0, .10);
+                border-radius: 14px;
+                background: rgba(255, 255, 255, .75);
+                overflow: hidden;
+            }
+        
+            .footer-summary {
+                cursor: pointer;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                padding: 12px 12px;
+                font-size: 14px;
+                font-weight: 800;
+            }
+        
+            .footer-summary::-webkit-details-marker {
+                display: none;
+            }
+        
+            .footer-panel {
+                padding: 0 12px 12px;
+            }
+        
+            .footer-p {
+                margin: 0;
+                font-size: 13px;
+                line-height: 1.7;
+                opacity: .9;
+            }
+        
+            .footer-arrow {
+                transition: transform .2s ease;
+            }
+        
+            .footer-details[open] .footer-arrow {
+                transform: rotate(180deg);
+            }
+        
+            .footer-bottom {
+                margin-top: 18px;
+                font-size: 12px;
+                opacity: .7;
+            }
+        
+            @media (max-width: 520px) {
+                .footer-summary {
+                    padding: 12px 10px;
+                }
+        
+                .footer-panel {
+                    padding: 0 10px 12px;
+                }
+            }
+        </style>
+        
+        <script>
+            (function () {
+                var el = document.getElementById("yearNow");
+                if (el) el.textContent = new Date().getFullYear();
+            })();
+        </script>
+
+        
+        
+
     </body>
 
 </html>
